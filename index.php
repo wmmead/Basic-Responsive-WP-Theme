@@ -87,7 +87,7 @@
     <ul>
     	<?php wp_get_archives('type=monthly'); ?>
     </ul>
-    <?php endif; ?><!-- this ends the if on line 73 -->
+    <?php endif; ?><!-- this ends the if on line 79 -->
 </div>
 
 <footer class="twelve columns">

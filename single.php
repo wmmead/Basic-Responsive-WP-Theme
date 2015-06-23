@@ -7,13 +7,12 @@
 
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html <?php language_attributes(); ?>> <!--<![endif]-->
+<html lang="en">
 <head>
 <meta charset="<?php bloginfo('charset'); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
@@ -22,17 +21,9 @@
 <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-<!-- ******if you want favicons, make the images and put them in the images folder *******
- 
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
-<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-114x114.png">
--->
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/images/favicon.png">
 
 <?php wp_head(); ?>
 </head>
@@ -40,15 +31,13 @@
 <div class="container">
 
 
-<header class="sixteen columns">
-	<hgroup>
-        <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-        <h2><?php bloginfo('description'); ?></h2>
-    </hgroup>
+<header class="twelve columns">
+    <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+    <h2><?php bloginfo('description'); ?></h2>
 </header>
 
 
-<div id="content" class="twelve columns">
+<div id="content" class="eight columns">
 	
     <!-- The loop starts Here -->
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -120,7 +109,7 @@
     <ul>
     	<?php wp_get_archives('type=monthly'); ?>
     </ul>
-    <?php endif; ?><!-- this ends the if on line 73 -->
+    <?php endif; ?><!-- this ends the if on line 101 -->
 </div>
 
 <footer class="sixteen columns">
