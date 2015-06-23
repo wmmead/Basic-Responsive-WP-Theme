@@ -1,31 +1,22 @@
 /*
 Theme Name: Basic Responsive Theme
 Theme URI: http://meadpoint.net
-Description: This is based on the responsive skeleton boilerplate
-Version: 1.0
+Description: This is based on the responsive skeleton boilerplate updated in June of 2015
+Version: 1.1
 Author: William Mead
 Author URI: http://meadpoint.net/
 */
 
-/* #Reset & Basics (Inspired by E. Meyers)
+/* #Normalize CSS
 ================================================== */
-@import url('css/reset.css');
+@import url('css/normalize.css');
 	
-
-/* #Skeleton Basic Styles -
+/* #Skeleton Framework
 ================================================== 
-if you want these styles, uncomment the line below.
-There is some nice basic typography, or you can get or build your own from elsewhere.
+This includes the skeleton responsive grid and some basic styling for type and forms
 */
 
-/*******
-@import url('css/skeleton.css');
-*******/
-
-/* #Skeleton Grid
-================================================== */
-
-@import url('css/skeleton-grid.css');	
+@import url('css/skeleton.css');	
 
 	
 /* #Page Styles
@@ -50,23 +41,3 @@ footer {
 	background:#C6D0A8;
 	min-height:100px;
 }
-
-
-/* #Media Queries
-================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
-
