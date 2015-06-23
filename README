@@ -1,8 +1,8 @@
 This is a basic responsive WordPress theme used for starting responsive sites in WordPress. The theme is stripped down to as little as possible.
 
-The theme uses Skeleton's HTML5 Boilerplate as a staring point. Please note that Skeleton has a responsive WordPress theme already, but it is too complex and built up and requires too much reverse engineering for my tastes. So I built this simple theme.
+The theme uses Skeleton's HTML5 Boilerplate as a staring point. Please note that there is another Skeleton responsive WordPress theme, but it is too complex and built up and requires too much reverse engineering for my tastes. So I built this simple theme.
 
-The theme has one stylesheet, but imports the css reset, the base styles from Skeleton, and the grid from Skeleton. The base styles come turned off, but if you like the basic styling provided by the Skeleton boilerplate, you can turn it on by uncommenting it at the top of the styles.css page.
+The theme has one stylesheet, but imports the normalize css and the grid from Skeleton. You can over-ride the base styling provided by the skeleton framework or just change it to suit your tastes.
 
 Before using this theme, it is recommended that you download and play around with a few static pages using the Skeleton boilerplate, so that you can understand how the grid works.
 
