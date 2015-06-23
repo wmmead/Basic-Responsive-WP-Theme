@@ -28,47 +28,48 @@
 <?php wp_head(); ?>
 </head>
 <body>
-<div class="container">
 
 
-<header class="twelve columns">
+
+<header class="container">
 	<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
     <h2><?php bloginfo('description'); ?></h2>
 </header>
 
-
-<div id="content" class="eight columns">
-	
-    <h2 class="center">Error 404 - Not Found</h2>
-
-</div><!-- end Content -->
-
-<div id="sidebar" class="four columns">
-
-    <ul>
-    	<!-- if widgets are being used, display them -->
-        <?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
-    </ul>
+<div class="container">
+    <section id="content" class="eight columns">
+        
+        <h2 class="center">Error 404 - Not Found</h2>
     
-    <!-- if widgets are not being used, display this instead -->
-	<h2>Here is a subtitle</h2>
-    <p>Here is some content for the sidebar</p>
+    </section><!-- end Content -->
     
-    <h2>Archives</h2>
-    <ul>
-    	<?php wp_get_archives('type=monthly'); ?>
-    </ul>
-    <?php endif; ?><!-- this ends the if on line 50 -->
-</div>
+    <section id="sidebar" class="four columns">
+    
+        <ul>
+            <!-- if widgets are being used, display them -->
+            <?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+        </ul>
+        
+        <!-- if widgets are not being used, display this instead -->
+        <h2>Here is a subtitle</h2>
+        <p>Here is some content for the sidebar</p>
+        
+        <h2>Archives</h2>
+        <ul>
+            <?php wp_get_archives('type=monthly'); ?>
+        </ul>
+        <?php endif; ?><!-- this ends the if on line 50 -->
+    </section>
+</div> <!-- end class container -->
 
-<footer class="twelve columns">
+<footer class="container">
     <p>
         <?php bloginfo('name'); ?> is proudly powered by <a href="http://wordpress.org/">WordPress</a><br />
         <a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a> and 
         <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a>.
     </p>
 </footer><!-- end Footer -->
-</div><!-- end Container -->
+
 		<?php wp_footer(); ?>
 </body>
 </html>
