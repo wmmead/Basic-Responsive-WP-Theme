@@ -3,8 +3,6 @@
  * @package WordPress
  * @subpackage Basic_Responsive_Theme
  */
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
