@@ -3,9 +3,8 @@
  * @package WordPress
  * @subpackage Basic_Responsive_Theme
  */
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,19 +30,19 @@
 
 
 
-<header class="container">
+<header>
 	<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
     <h2><?php bloginfo('description'); ?></h2>
 </header>
 
 <div class="container">
-    <section id="content" class="eight columns">
+    <section id="content">
         
         <h2 class="center">Error 404 - Not Found</h2>
     
     </section><!-- end Content -->
     
-    <section id="sidebar" class="four columns">
+    <section id="sidebar">
     
         <ul>
             <!-- if widgets are being used, display them -->
@@ -62,7 +61,7 @@
     </section>
 </div> <!-- end class container -->
 
-<footer class="container">
+<footer>
     <p>
         <?php bloginfo('name'); ?> is proudly powered by <a href="http://wordpress.org/">WordPress</a><br />
         <a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a> and 

@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<header class="container">
+<header>
     <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
     <h2><?php bloginfo('description'); ?></h2>
 </header>
@@ -110,7 +110,7 @@
     </section>
 </div><!-- end class container -->
 
-<footer class="container">
+<footer>
     <p>
         <?php bloginfo('name'); ?> is proudly powered by <a href="http://wordpress.org/">WordPress</a><br />
         <a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a> and 
