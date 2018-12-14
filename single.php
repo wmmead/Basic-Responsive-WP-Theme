@@ -3,9 +3,8 @@
  * @package WordPress
  * @subpackage Basic_Responsive_Theme
  */
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +34,7 @@
 </header>
 
 <div class="container">
-    <section id="content" class="eight columns">
+    <section id="content">
         
         <!-- The loop starts Here -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -92,7 +91,7 @@
     
     </section><!-- end Content -->
     
-    <section id="sidebar" class="four columns">
+    <section id="sidebar">
     
         <ul>
             <!-- if widgets are being used, display them -->

@@ -1,26 +1,32 @@
 /*
 Theme Name: Basic Responsive Theme
-Theme URI: http://meadpoint.net
-Description: This is based on the responsive skeleton boilerplate updated in June of 2015
-Version: 1.1
+Theme URI: http://mead.design
+Description: Very basic mobile first theme
+Version: 1.2
 Author: William Mead
-Author URI: http://meadpoint.net/
+Author URI: http://mead.design/
 */
 
 /* #Normalize CSS
 ================================================== */
 @import url('css/normalize.css');
 	
-/* #Skeleton Framework
-================================================== 
-This includes the skeleton responsive grid and some basic styling for type and forms
-*/
-
-@import url('css/skeleton.css');	
-
 	
 /* #Page Styles
 ================================================== */
+
+body {
+	font-family: Arial;
+}
+
+.container, header, footer {
+	margin: 0;
+}
+
+h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
 
 header {
 	background:#C6D0A8;
@@ -39,3 +45,20 @@ footer {
 	background:#C6D0A8;
 	min-height:100px;
 }
+
+@media only screen and (min-width: 600px) {
+	
+	.container { display: flex; }
+	
+	#content { flex: 2; }
+	
+	#sidebar { flex: 1; }
+	
+}
+
+@media only screen and (min-width: 1000px) {
+	
+	.container, header, footer { width: 960px; margin: auto; }
+	
+}
+
